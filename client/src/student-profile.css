@@ -1,0 +1,89 @@
+.student-pending-fees {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.student-attendance {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.student-attendance-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid var(--line);
+    color: var(--navy);
+    font-size: 13px;
+}
+
+.student-attendance-row .status {
+    font-size: 10px;
+}
+
+.student-pending-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.student-pending-heading h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.student-pending-heading > span {
+    display: inline-flex;
+    min-width: 22px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #f0efff;
+    color: var(--indigo);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.student-fee-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 11px 0;
+    border-top: 1px solid var(--line);
+}
+
+.student-fee-row > div:first-child,
+.student-fee-balance {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.student-fee-row b {
+    font-size: 13px;
+}
+
+.student-fee-row small,
+.student-no-pending {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.student-fee-balance {
+    align-items: flex-end;
+}
+
+.student-fee-balance .status {
+    font-size: 10px;
+}
+
+.student-no-pending {
+    margin: 12px 0 2px;
+}

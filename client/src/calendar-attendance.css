@@ -1,0 +1,95 @@
+.calendar-attendance-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.85fr) minmax(360px, 1.15fr);
+    align-items: start;
+    gap: 20px;
+}
+
+.calendar-month-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.calendar-month-heading h2 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.calendar-panel .calendar-grid button.is-selected {
+    outline: 2px solid var(--indigo);
+    outline-offset: 1px;
+}
+
+.calendar-panel .calendar-grid button.has-attendance i {
+    background: var(--green);
+}
+
+.calendar-panel .calendar-legend {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.calendar-panel .calendar-legend i,
+.calendar-sunday-key {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+}
+
+.calendar-sunday-key {
+    margin-left: 10px;
+    background: #7778ff;
+}
+
+.calendar-register .panel-head {
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.calendar-register .panel-head h2 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.calendar-register .panel-head p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.calendar-register .panel-head .soft-button {
+    flex: 0 0 auto;
+}
+
+.calendar-attendance-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    padding: 11px 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.calendar-attendance-summary b {
+    color: var(--green);
+}
+
+@media (max-width: 850px) {
+    .calendar-attendance-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-register .panel-head {
+        flex-direction: column;
+    }
+}

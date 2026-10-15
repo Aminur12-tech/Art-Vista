@@ -1,0 +1,12 @@
+.auth-screen{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 80% 0%,#edf0ff 0,transparent 30%),#f8faff}
+.auth-card{width:min(100%,420px);display:flex;flex-direction:column;gap:16px;padding:34px;border:1px solid #e7e9fb;border-radius:22px;background:#fff;box-shadow:0 18px 60px rgba(28,43,91,.1)}
+.auth-card>svg{color:#5b5cf0}
+.auth-card h1{font:800 26px 'Plus Jakarta Sans';letter-spacing:-.7px;color:#14274e;margin:0}
+.auth-card>p{color:#71809f;font-size:13px;line-height:1.6;margin:0 0 4px}
+.auth-card label{display:flex;flex-direction:column;gap:7px;color:#53617c;font-size:12px;font-weight:700}
+.auth-card input{height:44px;border:1px solid #e3e8f3;border-radius:11px;padding:0 12px;color:#14274e}
+.auth-card label small{font-size:11px;color:#8793aa;font-weight:400}
+.auth-card .primary-btn{justify-content:center;min-height:44px}
+.auth-card .auth-error{color:#b4233f;background:#fff1f3;border:1px solid #ffdee6;border-radius:10px;padding:10px 12px}
+.auth-card .primary-btn:disabled{opacity:.65;cursor:wait}
+@media(max-width:540px){.auth-card{padding:25px 21px}}
